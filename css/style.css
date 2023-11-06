@@ -1,0 +1,193 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+html{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    background-color: rgb(252, 250, 247);
+
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(214, 217, 218);
+    position: sticky;
+    top: 0;
+    margin-bottom: 2%;
+
+}
+
+.head h1 {
+    flex: 0 0 15%;
+    
+}
+
+.head input {
+    flex: 0 0 65%;
+    height: 30px;
+}
+
+.head button {
+    flex: 0 0 1%;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 20%;
+
+    
+}
+
+.head a {
+    flex: 0 0 1%;
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+    background-color: beige;
+    /* border: 1px solid black; */
+    border-radius: 20%;
+}
+
+.head a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* continer */
+.continer {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+}
+
+.add_left {
+    flex: 0 0 15%;
+    height: 500px;
+    position: sticky;
+    top: 13%;
+
+}
+
+.items {
+    flex: 0 0 60%;
+    
+
+}
+
+.add_right {
+    flex: 0 0 15%;
+    height: 500px;
+    position: sticky;
+    top: 13%;
+
+}
+
+
+.add_right video {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    
+    
+}
+.add_left video {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.sale{
+    width: 100%;
+    grid-column: 1 / span 6; /* פריט אחד יתפוס את שלוש העמודות */
+    margin-bottom: 5%;
+
+}
+.sale img{
+    width: 100%;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+    
+
+}
+#our_products{
+    grid-column: 1 / span 6; /* פריט אחד יתפוס את שלוש העמודות */
+    width: 100%;
+    font-size: 3em;
+}
+
+
+.item {
+    padding: 5%;
+    text-align: center;
+    /* border: 1px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-image: linear-gradient(white, #d5dcdc);
+    margin: 0 5% 65% 5%;
+
+}
+.item h2{
+    display: none;
+    color: black;
+}
+
+.item img {
+    /* padding: 5px; */
+    width: 140px;
+    height: 140px;
+    border-radius: 1%;
+
+}
+
+.item:hover {
+    box-shadow: rgba(100, 100, 100, 100) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(58, 140, 222, 0.35) 0px -2px 6px 0px inset;
+    background-color: gold;
+    color: white;
+    border: none;
+    margin-bottom:12%;
+    
+    
+    
+    
+}
+.item:hover h2 {
+    display: block; /* הצג את ה-h2 בעת hover */
+}
+.item:hover h3{
+    font-size: 0.5em;
+}
+
+
+#img_whatsApp{
+    width: 6%;
+    position: sticky;
+    bottom: 5%;
+}
+#img_whatsApp:hover{
+    width: 7%;
+}
+.img_whatsApp{
+    position: sticky;
+    bottom:  0;
+    font-size: 25px;
+    color: green;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.footr {
+    padding: 40px;
+    font-size: 2em;
+}

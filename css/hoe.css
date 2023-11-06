@@ -1,0 +1,156 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 250, 247);
+
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(214, 217, 218);
+    position: sticky;
+    top: 0;
+    margin-bottom: 2%;
+
+}
+
+.head h1 {
+    flex: 0 0 15%;
+}
+
+.head input {
+    flex: 0 0 65%;
+    height: 30px;
+}
+
+.head a {
+    flex: 0 0 1%;
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+    background-color: beige;
+    /* border: 1px solid black; */
+    border-radius: 20%;
+}
+
+.head a:hover {
+    background-color: black;
+    color: white;
+}
+
+.continer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(10, 8%);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+
+.continer_img {
+    border: 1px solid black;
+    grid-column: span 4;
+}
+
+.details {
+    border: 1px solid black;
+    grid-column: span 6;
+}
+
+.price {
+    border: 1px solid black;
+    grid-column: 5 / span 2;
+}
+
+#central_image img {
+    width: 80%;
+    margin: 6%;
+    border: 0.1px solid rgb(209, 214, 215);
+    border-radius: 5%;
+
+}
+
+.the_image_row {
+    display: flex;
+
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+.image img {
+    width: 80%;
+    height: 80%;
+    padding: 4%;
+    margin: 8%;
+    border: 0.1px solid rgb(209, 214, 215);
+    border-radius: 20%;
+}
+
+.image:hover img {
+    transform: scale(1.9);
+    /* הגדלת התמונה כאשר העכבר עובר מעליה */
+}
+
+#central_image img:hover {
+    transform: scale(1.2);
+    /* הגדלת התמונה כאשר העכבר עובר מעליה */
+
+}
+
+.details ul li {
+    text-align: left;
+    /* מיושר את הטקסט לצד השמאלי */
+    list-style: none;
+    /* מוריד את התבליטים מהרשימה */
+    font-size: 2em;
+}
+
+.coupon {
+    align-content: center;
+    background-image: linear-gradient(rgb(237, 48, 48), yellow);
+    padding: 1%;
+
+
+}
+.coupon img {
+    width: 10%;
+    margin: 1%;
+    border-radius: 7%;
+}
+#opinion {
+    padding: 1%;
+}
+#iframe{
+    grid-column: 1 / span 10;
+
+
+}
+.price  h3{
+    text-decoration: line-through;
+}
+.price{
+    background-color: rgb(236, 223, 223);
+    margin-bottom:5%;
+}
+.price:hover{
+    background-color: black;
+    color: wheat;
+}
